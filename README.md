@@ -12,24 +12,29 @@
 │   ├── AppImages.js
 │   ├── Assets.js
 │   ├── fonts
+│   │   ├── Quicksand-Bold.ttf
+│   │   ├── Quicksand-Light.ttf
+│   │   ├── Quicksand-Medium.ttf
+│   │   ├── Quicksand-Regular.ttf
+│   │   └── Quicksand-SemiBold.ttf
 │   ├── icons
 │   │   ├── btn_close.png
 │   │   ├── btn_close@2x.png
 │   │   └── btn_close@3x.png
 │   ├── images
+│   │   ├── img_app_name.png
+│   │   ├── img_app_name@2x.png
+│   │   └── img_app_name@3x.png
 │   └── locales
 │       ├── string.en.json
 │       └── string.vi.json
 ├── components
 │   ├── Dialog
-│   │   ├── GActionSheet.js
-│   │   ├── GAlert.js
-│   │   ├── GDialog.js
-│   │   ├── GInputAlert.js
 │   │   ├── GSpinner.js
 │   │   └── GToast.js
 │   ├── ImageView
 │   │   └── ImageViewPlaceHolder.js
+│   ├── RootNavigation.js
 │   └── Separator.js
 ├── configs
 │   ├── Config.js
@@ -44,24 +49,27 @@
 │   │   ├── APIMiddleware.js
 │   │   └── APIServices.js
 │   ├── notification
-│   │   └── Notification.js
 │   ├── redux
 │   │   ├── AppSlice.js
 │   │   ├── AppStore.js
 │   │   └── GlobalSlice.js
 │   ├── socket
 │   └── translate
-│       └── I18n.js
 ├── helpers
 ├── modules
-│   └── Example
-│       └── Example.js
+│   ├── Example
+│   │   └── Example.js
+│   └── Login
+│       └── Login.js
 ├── routes
 │   ├── AppLaunching.js
 │   ├── AppNavigator.js
 │   └── AppTabBar.js
 └── utils
+    ├── NavUtils.js
     └── Utils.js
+
+22 directories, 42 files
 ```
 * Copy format file `.prettierrc.js`
 * Change location `App.js`
@@ -214,3 +222,8 @@ yarn add react-native-loading-spinner-overlay
     * Register 2 app iOS và Android
     * Build android lỗi: `open -a /Applications/Android\ Studio.app`
   * Config firebase
+```
+# Key services
+android/app/google-services.json
+ios/GoogleService-Info.plist
+```
